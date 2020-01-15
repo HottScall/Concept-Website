@@ -1,16 +1,21 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
+import { Home } from "./Home";
+import { About } from "./About";
+import { Projects } from "./Projects";
+import { Contact } from "./Contact";
+import { NoMatch } from "./NoMatch";
 
 function App() {
   return (
     <React.Fragment>
       <Router>
         <Switch>
-          <Route exact path="/" component={home} />
-          <Route path="/about" component={about} />
-          <Route path="/projects" component={projects} />
-          <Route path="/contact" component={contact} />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
           <Route component={NoMatch} />
         </Switch>
       </Router>
