@@ -27,12 +27,16 @@ export const Navigationbar = () => (
       <Navbar.Brand href="/">
         <img className="logo" src={Logo} width="80" height="80" />
       </Navbar.Brand>
-      <h1>L.A Sadler Carpentry</h1>
+      <h1>
+        <Nav.Link href="/">L.A Sadler Carpentry</Nav.Link>
+      </h1>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Item>
-            <Nav.Link href="/">Home</Nav.Link>
+            <h4>
+              <Nav.Link href="/">Home</Nav.Link>
+            </h4>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link href="/about">About Us</Nav.Link>
