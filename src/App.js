@@ -7,12 +7,14 @@ import { Projects } from "./Projects";
 import { Contact } from "./Contact";
 import { NoMatch } from "./NoMatch";
 import { Layout } from "./components/Layout";
+import { Navigationbar } from "./components/Navigationbar";
 
 function App() {
   return (
     <React.Fragment>
-      <Router>
-        <Layout>
+      <Navigationbar />
+      <Layout>
+        <Router>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
@@ -20,8 +22,8 @@ function App() {
             <Route path="/contact" component={Contact} />
             <Route component={NoMatch} />
           </Switch>
-        </Layout>
-      </Router>
+        </Router>
+      </Layout>
     </React.Fragment>
   );
 }
