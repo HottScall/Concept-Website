@@ -1,6 +1,7 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import styled from "styled-components";
+import Logo from "../assets/Logo.jpg";
 
 const Styles = styled.div`
   .navbar {
@@ -9,19 +10,24 @@ const Styles = styled.div`
 
   .navbar-brand,
   .narbar-nav,
-  .nav-link {
+  .nav-link
+  {
     color: #efd28d;
 
     &:hover {
       color: #ff7700;
     }
-  }
+
+
 `;
 
 export const Navigationbar = () => (
   <Styles>
     <Navbar expand="lg">
-      <Navbar.Brand href="/">L.A Sadler Carpentry</Navbar.Brand>
+      <Navbar.Brand href="/">
+        <img className="logo" src={Logo} width="80" height="80" />
+      </Navbar.Brand>
+      <h1>L.A Sadler Carpentry</h1>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
