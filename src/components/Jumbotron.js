@@ -31,7 +31,12 @@ export const Jumbotron = () => (
       <div className="overlay">
         <Container>
           <h1>Carpentry services availble in Essex</h1>
-          <p>Log Cabins, Staircases, Fitted Wardrobes</p>
+          <p>20 years of experience in woodwork.</p>
+          <p>
+            {" "}
+            I have previously completed projects including: Log Cabins,
+            Staircases, Fitted Wardrobes
+          </p>
         </Container>
       </div>
     </Jumbo>
