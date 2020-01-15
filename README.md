@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1>LA Sadler Carpentry Website</h1>
+<h2>A website built with React. Concept design for a friend who runs a carpentry business</h2>
+<h3>Technologies used: React, Bootstrap, React Router and Styled Components</h3>
 
 ## Available Scripts
 
