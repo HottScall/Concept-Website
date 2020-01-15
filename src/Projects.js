@@ -1,9 +1,12 @@
 import React from "react";
+import { Cards } from "./components/Card";
 
 export const Projects = () => (
   <div>
-    <h1>Projects</h1>
-    <p>blah blah blah blah blah blah blah blah blah blah blah blah</p>
-    <p>blah blah blah blah blah blah blah blah blah blah blah blah</p>
+    <div>
+      <h1 align="center">Projects</h1>
+      <h2 align="center">A list of recent projects undertaken for clients</h2>
+    </div>
+    <Cards />
   </div>
 );
