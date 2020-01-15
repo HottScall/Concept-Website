@@ -25,7 +25,13 @@ export const Navigationbar = () => (
   <Styles>
     <Navbar expand="lg">
       <Navbar.Brand href="/">
-        <img className="logo" src={Logo} width="80" height="80" />
+        <img
+          className="logo"
+          src={Logo}
+          width="80"
+          height="80"
+          alt="company logo"
+        />
       </Navbar.Brand>
       <h1>
         <Nav.Link href="/">L.A Sadler Carpentry</Nav.Link>
@@ -39,13 +45,19 @@ export const Navigationbar = () => (
             </h4>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/about">About Us</Nav.Link>
+            <h4>
+              <Nav.Link href="/about">About Us</Nav.Link>
+            </h4>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/projects">Projects</Nav.Link>
+            <h4>
+              <Nav.Link href="/projects">Projects</Nav.Link>
+            </h4>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/contact">Contact Us</Nav.Link>
+            <h4>
+              <Nav.Link href="/contact">Contact Us</Nav.Link>
+            </h4>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
