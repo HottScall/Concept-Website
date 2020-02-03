@@ -1,11 +1,10 @@
 import React from "react";
-import { Jumbotron } from "./components/Jumbotron";
+import { HomeJumbotron } from "./components/HomeJumbotron";
 import { HomeContainer } from "./components/HomeContainer";
-import index from "./index.css";
 
 export const Home = () => (
   <div className="home-page-wrapper">
-    <Jumbotron />
+    <HomeJumbotron />
     <HomeContainer />
   </div>
 );

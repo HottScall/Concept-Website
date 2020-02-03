@@ -4,9 +4,7 @@ import {
   Container,
   Row,
   Col,
-  Button,
-  CardGroup,
-  Card
+  Button
 } from "react-bootstrap";
 import styled from "styled-components";
 import Decking from "../assets/Decking.jpg";
@@ -16,7 +14,6 @@ const Styles = styled.div`
     max-width: 100%;
     max-height 100%;
     position: auto;
-    background-position: 50% 50%;
   }
 
   .Jumbo {
@@ -24,15 +21,12 @@ const Styles = styled.div`
     background-color: #12355b;
     color: #ffffff;
     height: 500px;
-    position: relative;
-    z-index: -2;
-    margin 10px;
-
+    margin-top: 10px;
   }
 
 `;
 
-export const Jumbotron = () => (
+export const HomeJumbotron = () => (
   <Styles>
     <Jumbo className="Jumbo">
       <Container>
@@ -47,6 +41,17 @@ export const Jumbotron = () => (
                 refurbishments, loft conversation, kitchen fitting, log cabin
                 builds and more
               </strong>
+            </p>
+            <p align="center">
+              <Button variant="light" href="/projects">
+                View Projects Gallery
+              </Button>
+            </p>
+            <br />
+            <p align="center">
+              <Button variant="light" href="/contact">
+                Contact Us
+              </Button>
             </p>
           </Col>
           <Col className="right col">

@@ -8,7 +8,6 @@ import { Contact } from "./Contact";
 import { NoMatch } from "./NoMatch";
 import { Layout } from "./components/Layout";
 import { Navigationbar } from "./components/Navigationbar";
-import { Jumbotron } from "./components/Jumbotron";
 
 function App() {
   return (

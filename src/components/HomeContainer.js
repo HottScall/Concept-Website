@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button, Card, CardDeck } from "react-bootstrap";
+import { Container, Card, CardDeck } from "react-bootstrap";
 import styled from "styled-components";
 import Kitchen from "../assets/Kitchen.jpg";
 import Cabin from "../assets/Cabin.jpg";
@@ -9,9 +9,13 @@ import Doors from "../assets/Doors.jpg";
 import stairs from "../assets/stairs.jpg";
 
 const Styles = styled.div`
-  container {
-    padding: 5px;
-    border: 10px, solid, black;
+  .container-wrapper {
+    border: 2.5px solid #12355b;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
   }
 
   .info-cards {
