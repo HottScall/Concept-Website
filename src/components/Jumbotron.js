@@ -1,28 +1,33 @@
 import React from "react";
-import { Jumbotron as Jumbo, Container } from "react-bootstrap";
+import {
+  Jumbotron as Jumbo,
+  Container,
+  Row,
+  Col,
+  Button,
+  CardGroup,
+  Card
+} from "react-bootstrap";
 import styled from "styled-components";
-import Cabin2 from "../assets/Cabin2.jpg";
+import Kitchen from "../assets/Kitchen.jpg";
 
 const Styles = styled.div`
+
+  img{
+    max-width: 100%;
+    max-height 100%;
+  }
+
   .Jumbo {
-    background: url(${Cabin2}) no-repeat fixed bottom;
     background-size: cover;
-    color: #efefef;
-    height: 300px;
+    color: black;
+    height: 500px;
+    padding 10px;
+    margin 10px;
     position: relative;
     z-index: -2;
   }
 
-  // .overlay {
-  //   background-color: #000;
-  //   opacity: 0.6;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   bottom: 0;
-  //   right: 0;
-  //   z-index: -1;
-  // }
 `;
 
 export const Jumbotron = () => (
@@ -30,13 +35,21 @@ export const Jumbotron = () => (
     <Jumbo fluid="true" className="Jumbo">
       <div className="overlay">
         <Container>
-          <h1>Carpentry services availble in Essex</h1>
-          <p>20 years of experience in woodwork.</p>
-          <p>
-            {" "}
-            I have previously completed projects including: Log Cabins,
-            Staircases, Fitted Wardrobes
-          </p>
+          <Row>
+            <Col className="left col">
+              <h2>Carpentry Services Available in Essex</h2>
+              <p>
+                20 years experience of all carpentry services including home
+                refurbishments, loft conversation, kitchen fitting, log cabin
+                builds and more
+              </p>
+              <Button variant="outline-primary">View Projects Gallery</Button>
+              <Button variant="outline-primary">Contact Us</Button>
+            </Col>
+            <Col className="right col">
+              <img src={Kitchen} alt="Kitchen" />
+            </Col>
+          </Row>
         </Container>
       </div>
     </Jumbo>
