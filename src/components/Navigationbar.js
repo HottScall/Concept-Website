@@ -6,7 +6,7 @@ import Logo from "../assets/Logo.jpg";
 const Styles = styled.div`
   .navbar {
     background-color: #12355b;
-    color: #ff7700;
+    color: #ffffff;
   }
 
   .navbar-brand,
