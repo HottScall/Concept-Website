@@ -5,14 +5,16 @@ import Logo from "../assets/Logo.jpg";
 
 const Styles = styled.div`
   .navbar {
-    background-color: #F4F4ED;
+    background-color: #12355b;
+    color: #ff7700;
   }
 
   .navbar-brand,
   .narbar-nav,
+  .nav-item,
   .nav-link
   {
-    color: #868682;
+    color: #F3EFE0;
 
     &:hover {
       color: #ff7700;
