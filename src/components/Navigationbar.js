@@ -14,10 +14,10 @@ const Styles = styled.div`
   .nav-item,
   .nav-link
   {
-    color: #F3EFE0;
+    color: #ffffff;
 
     &:hover {
-      color: #ff7700;
+      color: #ffffff;
     }
 
 
@@ -25,7 +25,7 @@ const Styles = styled.div`
 
 export const Navigationbar = () => (
   <Styles>
-    <Navbar expand="lg">
+    <Navbar variant="dark" expand="lg">
       <Navbar.Brand href="/">
         <img
           className="logo"

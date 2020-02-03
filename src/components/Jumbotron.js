@@ -34,7 +34,7 @@ const Styles = styled.div`
 
 export const Jumbotron = () => (
   <Styles>
-    <Jumbo fluid className="Jumbo">
+    <Jumbo className="Jumbo">
       <Container>
         <Row className="row">
           <Col className="left col">
