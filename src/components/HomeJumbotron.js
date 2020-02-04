@@ -20,7 +20,7 @@ const Styles = styled.div`
     background-size: cover;
     background-color: #12355b;
     color: #ffffff;
-    height: 500px;
+    height: 700px;
     margin-top: 10px;
   }
 
@@ -46,14 +46,13 @@ export const HomeJumbotron = () => (
               </strong>
             </p>
             <p align="center">
-              <Button variant="light" href="/projects">
-                View Projects
-              </Button>
-            </p>
-            <p align="center">
-              <Button variant="light" href="/contact">
-                Contact Us
-              </Button>
+              <i id="icon" className="fas fa-phone-square-alt fa-5x"></i>
+              {<h3>07854 890 319</h3>}
+
+              <i align="right" className="fas fa-envelope-square fa-5x"></i>
+              <a href="mailto:Scotthall1983@hotmail.com" target="_blank">
+                <h3>Scotthall1983@hotmail.com</h3>
+              </a>
             </p>
           </Col>
           <Col className="right col">

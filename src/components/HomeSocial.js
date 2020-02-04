@@ -19,7 +19,7 @@ export const HomeSocial = () => (
   <Styles>
     <div className="home-social-wrapper">
       <Jumbotron className="Jumbo">
-        <h1 align="center">See me on social media</h1>
+        <h1 align="center">Follow me on social media</h1>
         <p className="social-icons" align="center">
           <a
             href="https://www.instagram.com/lasadler_carpentry/"
