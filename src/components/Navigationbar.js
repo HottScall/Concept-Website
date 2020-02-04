@@ -6,7 +6,6 @@ import Logo from "../assets/Logo.jpg";
 const Styles = styled.div`
   .navbar {
     background-color: #12355b;
-    color: #ffffff;
   }
 
   .navbar-brand,
@@ -19,13 +18,11 @@ const Styles = styled.div`
     &:hover {
       color: #ffffff;
     }
-
-
 `;
 
 export const Navigationbar = () => (
   <Styles>
-    <Navbar variant="dark" expand="lg">
+    <Navbar className="Nav" variant="dark" expand="lg">
       <Navbar.Brand href="/">
         <img
           className="logo"
@@ -39,30 +36,29 @@ export const Navigationbar = () => (
         <Nav.Link href="/">L.A Sadler Carpentry</Nav.Link>
       </h1>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
-          <Nav.Item>
-            <h4>
-              <Nav.Link href="/">Home</Nav.Link>
-            </h4>
-          </Nav.Item>
-          <Nav.Item>
-            <h4>
-              <Nav.Link href="/about">About Us</Nav.Link>
-            </h4>
-          </Nav.Item>
-          <Nav.Item>
-            <h4>
-              <Nav.Link href="/projects">Projects</Nav.Link>
-            </h4>
-          </Nav.Item>
-          <Nav.Item>
-            <h4>
-              <Nav.Link href="/contact">Contact Us</Nav.Link>
-            </h4>
-          </Nav.Item>
-        </Nav>
-      </Navbar.Collapse>
+
+      <Nav className="ml-auto">
+        <Nav.Item>
+          <h4>
+            <Nav.Link href="/">Home</Nav.Link>
+          </h4>
+        </Nav.Item>
+        <Nav.Item>
+          <h4>
+            <Nav.Link href="/about">About Us</Nav.Link>
+          </h4>
+        </Nav.Item>
+        <Nav.Item>
+          <h4>
+            <Nav.Link href="/projects">Projects</Nav.Link>
+          </h4>
+        </Nav.Item>
+        <Nav.Item>
+          <h4>
+            <Nav.Link href="/contact">Contact Us</Nav.Link>
+          </h4>
+        </Nav.Item>
+      </Nav>
     </Navbar>
   </Styles>
 );
