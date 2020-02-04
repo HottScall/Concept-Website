@@ -37,17 +37,19 @@ export const HomeJumbotron = () => (
             </h2>
             <p align="center">
               <strong>
-                20 years experience of all carpentry services including home
-                refurbishments, loft conversation, kitchen fitting, log cabin
-                builds and more
+                20 years experience of 1st and 2nd fix carpentry services
+                including home refurbishments, loft conversions, kitchen
+                fitting, log cabin builds and more. 1st and 2nd fix Carpentry
+                business. Happy to quote any size job. I pride myself on
+                perfection, reliability, and alway giving a well priced friendly
+                service
               </strong>
             </p>
             <p align="center">
               <Button variant="light" href="/projects">
-                View Projects Gallery
+                View Projects
               </Button>
             </p>
-            <br />
             <p align="center">
               <Button variant="light" href="/contact">
                 Contact Us

@@ -36,7 +36,6 @@ export const Navigationbar = () => (
         <Nav.Link href="/">L.A Sadler Carpentry</Nav.Link>
       </h1>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
       <Nav className="ml-auto">
         <Nav.Item>
           <h4>
