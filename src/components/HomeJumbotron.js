@@ -45,21 +45,21 @@ export const HomeJumbotron = () => (
                 service
               </strong>
             </p>
-            <p align="center">
-              <i id="icon" className="fas fa-phone-square-alt fa-5x"></i>
-              {<h3>07854 890 319</h3>}
-
-              <i align="right" className="fas fa-envelope-square fa-5x"></i>
-              <a href="mailto:Scotthall1983@hotmail.com" target="_blank">
-                <h3>Scotthall1983@hotmail.com</h3>
-              </a>
-            </p>
           </Col>
           <Col className="right col">
             <img src={`${Decking}`} alt="Decking" />
           </Col>
         </Row>
       </Container>
+      <p align="left">
+        <i id="icon" className="fas fa-phone-square-alt fa-5x"></i>
+        {<h3>07854 890 319</h3>}
+
+        <i className="fas fa-envelope-square fa-5x"></i>
+        <a href="mailto:Scotthall1983@hotmail.com" target="_blank">
+          <h3>Scotthall1983@hotmail.com</h3>
+        </a>
+      </p>
     </Jumbo>
   </Styles>
 );
